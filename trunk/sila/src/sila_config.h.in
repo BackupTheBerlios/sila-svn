@@ -1,0 +1,29 @@
+/* $Id: oxml_config.h.in 23 2006-01-21 13:10:28Z choman $ */
+/* This file generated from onir_config.h.in. */
+/*
+ * Copyright (C) 2005
+ *
+ * This program is free software; you can redistribute it and/or
+ * modify it under the terms of the GNU General Public License
+ * as published by the Free Software Foundation; either version 2
+ * of the License, or (at your option) any later version.
+ *
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU General Public License for more details.
+ *
+ * You should have received a copy of the GNU General Public License
+ * along with this program; if not, write to the Free Software
+ * Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA  02111-1307, USA.
+ */
+#ifndef __SILA_CONFIG_H
+#define __SILA_CONFIG_H
+
+#define SILA_MAJOR_VERSION	@SILA_MAJOR_VERSION@
+#define SILA_MINOR_VERSION	@SILA_MINOR_VERSION@
+#define SILA_MICRO_VERSION	@SILA_MICRO_VERSION@
+#define SILA_INTERFACE_AGE	@SILA_INTERFACE_AGE@
+#define SILA_BINARY_AGE		@SILA_BINARY_AGE@
+
+#endif

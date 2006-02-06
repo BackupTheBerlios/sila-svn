@@ -1,0 +1,13 @@
+# $Id: liboxml.pc.in 27 2006-01-21 14:56:27Z choman $
+
+prefix=@prefix@
+exec_prefix=@exec_prefix@
+libdir=@libdir@
+includedir=@includedir@/sila
+
+Name: @PACKAGE@
+Description: Small Internal Language Adapter (library)
+Version: @VERSION@
+Libs: -L${libdir} -lsila
+Cflags: -I${includedir} -I${includedir}/sila
+
