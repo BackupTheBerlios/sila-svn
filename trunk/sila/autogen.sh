@@ -1,6 +1,5 @@
 #!/bin/sh
-# $Id: autogen.sh 61 2006-01-27 08:17:26Z choman $
-
+# $Id$
 
 if test "$*"; then
   ARGS="$*"

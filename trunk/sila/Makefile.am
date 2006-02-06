@@ -1,4 +1,4 @@
-# $Id: Makefile.am 26 2006-01-21 14:02:00Z choman $
+# $Id$
 
 SUBDIRS = src scripts
 

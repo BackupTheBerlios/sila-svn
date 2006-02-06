@@ -1,6 +1,6 @@
 # Configure paths for libsila
 # A hacked up version of Owen Taylor's gtk.m4 (Copyright 1997)
-# $Id: libsila.m4 23 2006-01-21 13:10:28Z choman $
+# $Id$
 
 # Owen Taylor     97-11-3
 

@@ -1,5 +1,5 @@
 #!/bin/sh
-# $Id: libsila-config.in 23 2006-01-21 13:10:28Z choman $
+# $Id$
 # This script was borrowed from Gtk (and Glib)
 
 prefix=@prefix@

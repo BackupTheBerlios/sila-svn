@@ -1,4 +1,4 @@
-# $Id: Makefile.am 61 2006-01-27 08:17:26Z choman $
+# $Id$
 
 oxmlincludedir = $(includedir)/oniria/oxml
 

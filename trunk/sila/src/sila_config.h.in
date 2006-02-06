@@ -1,5 +1,5 @@
-/* $Id: oxml_config.h.in 23 2006-01-21 13:10:28Z choman $ */
-/* This file generated from onir_config.h.in. */
+/* $Id$ */
+/* This file generated from sila_config.h.in. */
 /*
  * Copyright (C) 2005
  *
