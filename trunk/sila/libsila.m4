@@ -162,7 +162,7 @@ main ()
           LIBS="$LIBS $LIBSILA_LIBS"
           AC_LANG_PUSH(C++)
           AC_LINK_IFELSE([
-#include <oxml/oxml.h>
+#include <sila/sila.h>
 #include <stdio.h>
 int main() {
 return ((libsila_major_version) || (libsila_minor_version) || (libsila_micro_version)); 

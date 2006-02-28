@@ -1,40 +1,25 @@
 # $Id$
 
-oxmlincludedir = $(includedir)/oniria/oxml
+silaincludedir = $(includedir)/oniria/sila
 
-SUBDIRS = . tests
+EXTRA_DIST = sila_config.h.in
 
-EXTRA_DIST = oxml_config.h.in
+lib_LTLIBRARIES = libsila.la
 
-lib_LTLIBRARIES = liboxml.la
-
-liboxml_la_CPPFLAGS = -Wall @QT_CFLAGS@ -DBUILDING_LIBOXML_DLL
-liboxml_la_LDFLAGS = -version-info $(LT_CURRENT):$(LT_REVISION):$(LT_AGE) \
-		       -release $(LT_RELEASE) @LIBTOOL_EXTRA_LDFLAGS@ \
-		       @QT_LIBS@
+libsila_la_CPPFLAGS = -Wall
+libsila_la_LDFLAGS = -version-info $(LT_CURRENT):$(LT_REVISION):$(LT_AGE) \
+		       -release $(LT_RELEASE) @LIBTOOL_EXTRA_LDFLAGS@
+		       
 
 
 
-liboxml_la_HEADERS_moc = xmlAttribute.h			\
-			 xmlElement.h			\
-			 xmlStanza.h			\
-			 xmlStream.h
+libsila_la_HEADERS_moc = sila.h
 
-nobase_oxmlinclude_HEADERS = oxml.h				\
-			     oxml_dll.h				\
-			     $(liboxml_la_HEADERS_moc)
 
-liboxml_la_SOURCES = xml.cc					\
-		     xmlAttribute.cc				\
-		     xmlElement.cc				\
-		     xmlStanza.cc				\
-		     xmlStream.cc				\
-		     $(liboxml_la_HEADERS_moc:.h=.moc.cc)
+nobase_silainclude_HEADERS = sila.h	
+			     	
+			     
 
-CLEANFILES = *.moc.cc
+libsila_la_SOURCES = sila.cc		     
 
-oxmlinclude_DATA = oxml_config.h
-
-%.moc.cc: %.h
-	$(QTMOC) $< -o $@
-
+silainclude_DATA = sila_config.h
