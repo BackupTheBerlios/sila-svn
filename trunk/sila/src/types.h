@@ -16,28 +16,15 @@
  * along with this program; if not, write to the Free Software
  * Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA  02111-1307, USA.
  */ 
-  
- #ifndef __SILA__H__
- #define __SILA__H__
-
-#include "console.h"
-  
-class Types;
-
  
- class Sila{
+#ifndef __TYPES_H__
+#define __TYPES_H__
+
+class Types{
 	public:
-		Sila();
-		~Sila();
-		
-		bool Init();
-		
-		inline Types * types() { return _types; };
-		Console & con() { return *_console; }
-	private:
-		Types * _types;	
-		Console * _console;
-		
- };
- 
- #endif /* __SILA__H__ */
+		enum kinds { tk_string, tk_numeric, th_array };		
+		Types();
+		~Types();
+};
+
+#endif /* __TYPES_H__ */

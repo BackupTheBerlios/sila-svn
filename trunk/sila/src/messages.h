@@ -15,29 +15,15 @@
  * You should have received a copy of the GNU General Public License
  * along with this program; if not, write to the Free Software
  * Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA  02111-1307, USA.
- */ 
-  
- #ifndef __SILA__H__
- #define __SILA__H__
-
-#include "console.h"
-  
-class Types;
-
+ */
  
- class Sila{
-	public:
-		Sila();
-		~Sila();
-		
-		bool Init();
-		
-		inline Types * types() { return _types; };
-		Console & con() { return *_console; }
-	private:
-		Types * _types;	
-		Console * _console;
-		
+ #ifndef __MESSAGE_H__
+ #define __MESSAGE_H__
+ 
+ class Messages{
+	 public:
+	 	Messages();
+	 	~Messages();
  };
  
- #endif /* __SILA__H__ */
+ #endif /* __MESSAGE_H__ */

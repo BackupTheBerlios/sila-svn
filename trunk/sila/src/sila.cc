@@ -17,13 +17,30 @@
  * Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA  02111-1307, USA.
  */ 
  
+ #include <new>
+ #include "error.h"
+ #include "types.h"
  #include "sila.h"
+ 
+ Sila _app;
  
  Sila::Sila()
  {
+	 std::set_new_handler(_no_memory_handler);
+	 
+	 _types = new Types;
+	 _console = new Console;
  }
  
  Sila::~Sila()
  {
+	 delete _types;
+	 delete _console;
+	 std::set_new_handler(0);
  }
  
+ bool Sila::Init()
+ {
+	 return true;
+ }
+
